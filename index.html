@@ -33,7 +33,7 @@
             top: 0.0%;
         }
         .leaflet-container { font-size: 1rem; }
-        .myInfo {
+        .pathInfo {
             position: absolute;
             top: 10px;
             right: 10px;
@@ -44,28 +44,56 @@
             border-radius: 5px;
             box-shadow: 2px 2px 2px #888;
         }
-        #keyText {
+        .timeInfo {
+            position: absolute;
+            bottom: 20px;
+            right: 10px;
+            z-index: 1002;
+            background-color: rgba(255, 255, 255, 0.708);
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 7px;
+            box-shadow: 2px 2px 2px #888;
+        }
+
+        #keyText1 {
             font-size: 2.5rem;
             font-weight: bold;
             padding-right: 10px;
         }
-        #valueText {
+        #valueText1 {
             font-size: 2.5rem;
+        }
+        #keyText2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding-right: 10px;
+        }
+        #valueText2 {
+            font-size: 1.5rem;
         }
     </style>
         
 </head>
 <body>
     
-    <div class="myInfo">
+    <div class="pathInfo">
         <table>
             <tr>
-                <td id="keyText">출발지</td>
-                <td id="valueText">IT-2호관</td>
+                <td id="keyText1">출발지</td>
+                <td id="valueText1">IT-2호관</td>
             </tr>
             <tr>
-                <td id="keyText">도착지</td>
-                <td id="valueText">글로벌플라자</td>
+                <td id="keyText1">도착지</td>
+                <td id="valueText1">글로벌플라자</td>
+        </table>
+    </div>
+    <div class="timeInfo">
+        <table>
+            <tr>
+                <td id="keyText2">시각</td>
+                <td id="valueText2">2024-06-07 15:00:00 (utc+9)</td>
+            </tr>
         </table>
     </div>
     <div class="folium-map" id="map_ccc84666a3fe9d15acf6e0cbb41561a1" ></div>
